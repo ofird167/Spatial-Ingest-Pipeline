@@ -1,0 +1,12 @@
+# Ignore sensitive files
+*.tfvars
+.terraform/
+*.tfstate
+*.tfstate.backup
+.env
+*.pem
+*:Zone.Identifier
+*Zone.Identifier
+
+# Build artifacts
+*.zip

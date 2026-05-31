@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.7818, 32.0853]
+      },
+      "properties": {
+        "city": "Tel Aviv",
+        "country": "Israel",
+        "project": "Asterra Ingest Test",
+        "status": "active"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [34.7818, 32.0853],
+          [34.8516, 32.1624]
+        ]
+      },
+      "properties": {
+        "route": "Test Route 1",
+        "length_km": 12.5
+      }
+    }
+  ]
+}

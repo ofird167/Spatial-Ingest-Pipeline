@@ -1,0 +1,12 @@
+replicaCount: 1
+image:
+  repository: your-repo/backend
+  tag: latest
+service:
+  type: ClusterIP
+  port: 80
+
+db:
+  host: "terraform-20260531181829993100000001.c4rkuiy22vom.us-east-1.rds.amazonaws.com"
+  user: "dbadmin"
+  name: "postgres"
