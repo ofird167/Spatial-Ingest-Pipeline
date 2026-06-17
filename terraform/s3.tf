@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "data_bucket" {
-  bucket = "interview2-data-bucket-${random_id.suffix.hex}"
+  bucket = "Spatial-Ingest-Pipeline-data-bucket-${random_id.suffix.hex}"
 }
 
 # You will need this for the bucket name to be unique

@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "devops-s3-state-bucket"
-    key    = "interview2/terraform.tfstate"
+    key    = "Spatial-Ingest-Pipeline/terraform.tfstate"
     region = "us-east-1"
   }
 }
