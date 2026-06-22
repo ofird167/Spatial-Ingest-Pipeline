@@ -15,3 +15,8 @@ variable "db_password" {
   type        = string
   sensitive   = true # Terraform will hide this in logs
 }
+
+variable "key_name" {
+  description = "The AWS key pair name for SSH access"
+  type        = string
+}

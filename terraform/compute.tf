@@ -16,7 +16,7 @@ resource "aws_instance" "bastion" {
   subnet_id                   = aws_subnet.public_1.id # Must be a public subnet
   vpc_security_group_ids      = [aws_security_group.bastion_sg.id] # Need to create this
   associate_public_ip_address = true
-  key_name                    = "ofir" # REPLACE WITH YOUR KEY PAIR NAME
+  key_name                    = var.key_name
 
   tags = {
     Name = "bastion-host"

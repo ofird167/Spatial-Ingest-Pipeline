@@ -75,5 +75,8 @@ jobs:
       - name: Deploy Infrastructure (Terraform Apply)
         working-directory: ./terraform
         run: |
-          terraform init
-          terraform apply -auto-approve -var="db_password=${{ secrets.DB_PASSWORD }}"
+          terraform init \
+            -backend-config="bucket=${{ secrets.AWS_S3_BUCKET || 's3interview2-state-bucket-ofir' }}" \
+            -backend-config="key=spatial-ingest-pipeline/terraform.tfstate" \
+            -backend-config="region=us-east-1"
+          terraform apply -auto-approve -var="db_password=${{ secrets.DB_PASSWORD }}" -var="key_name=${{ secrets.AWS_KEY_NAME || 'ofir' }}"

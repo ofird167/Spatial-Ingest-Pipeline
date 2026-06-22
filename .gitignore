@@ -4,6 +4,7 @@
 *.tfstate
 *.tfstate.backup
 .env
+secrets/
 *.pem
 *:Zone.Identifier
 *Zone.Identifier
