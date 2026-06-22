@@ -103,7 +103,7 @@ SELECT id, properties->>'city' AS city, ST_AsText(geom) AS geometry FROM geojson
 
 ## 5. CI/CD Deployment Pipeline
 
-The project includes an automated GitHub Actions pipeline in [.github/workflows/deploy.yml](file:///home/devops-user/projects/Spatial-Ingest-Pipeline/.github/workflows/deploy.yml).
+The project includes an automated GitHub Actions pipeline in [.github/workflows/deploy.yml](file:///home/ofird/projects/Spatial-Ingest-Pipeline/.github/workflows/deploy.yml).
 
 ### Configuring GitHub Secrets
 Add these secrets to your GitHub repository under **Settings -> Secrets and variables -> Actions**:

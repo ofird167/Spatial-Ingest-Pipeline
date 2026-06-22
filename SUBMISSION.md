@@ -34,7 +34,7 @@ graph TD
 ## 2. What Worked (Key Successes)
 
 1. **Robust Dual-Mode Application:** 
-   The data-processing application ([app.py](file:///home/devops-user/projects/Spatial-Ingest-Pipeline/src/backend/app.py)) was engineered to support dual runtimes:
+   The data-processing application ([app.py](file:///home/ofird/projects/Spatial-Ingest-Pipeline/src/backend/app.py)) was engineered to support dual runtimes:
    * **AWS Lambda Mode:** Runs serverless and reacts to S3 event notifications.
    * **Container Mode:** Starts an interactive Flask REST API on port `8080` (for local Docker/Kubernetes/Helm environments).
 2. **Secure Database Operations:** 
